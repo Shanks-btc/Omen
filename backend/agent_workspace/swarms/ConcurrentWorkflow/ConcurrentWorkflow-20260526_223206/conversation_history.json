@@ -1,0 +1,22 @@
+[
+  {
+    "role": "User",
+    "content": "Complete multi-chain scan across Ethereum, Solana, BNB Chain, Base, and Arbitrum. Include whale movements, top airdrop opportunities, token unlock risks, recent exploit risks, and VC funding patterns. Be specific with names, chains, amounts, and trading implications."
+  },
+  {
+    "role": "SPECTRA-RISK-AGENT",
+    "content": "[{'type': 'function', 'function': {'name': 'get_token_unlocks', 'description': 'Find upcoming token unlock events with more than ten million dollars of potential supply.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'get_recent_hacks', 'description': 'Fetch recent DeFi hacks with protocol name, amount lost, and affected chain.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]\nComplete multi-chain scan across Ethereum, Solana, BNB Chain, Base, and Arbitrum. Include whale movements, top airdrop opportunities, token unlock risks, recent exploit risks, and VC funding patterns. Be specific with names, chains, amounts, and trading implications."
+  },
+  {
+    "role": "SPECTRA-AIRDROP-AGENT",
+    "content": "[{'type': 'function', 'function': {'name': 'get_airdrop_opportunities', 'description': 'Find DeFi protocols with high TVL but no token yet as potential airdrop candidates.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]\nComplete multi-chain scan across Ethereum, Solana, BNB Chain, Base, and Arbitrum. Include whale movements, top airdrop opportunities, token unlock risks, recent exploit risks, and VC funding patterns. Be specific with names, chains, amounts, and trading implications."
+  },
+  {
+    "role": "SPECTRA-WHALE-AGENT",
+    "content": "[{'type': 'function', 'function': {'name': 'get_solana_whale_movements', 'description': 'Scan Solana token markets for unusual high-volume whale movement signals.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'scan_all_evm_chains', 'description': 'Scan whale movements across Ethereum, BNB, Base, and Arbitrum chains.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]\nComplete multi-chain scan across Ethereum, Solana, BNB Chain, Base, and Arbitrum. Include whale movements, top airdrop opportunities, token unlock risks, recent exploit risks, and VC funding patterns. Be specific with names, chains, amounts, and trading implications."
+  },
+  {
+    "role": "SPECTRA-VC-AGENT",
+    "content": "[{'type': 'function', 'function': {'name': 'get_recent_raises', 'description': 'Fetch recent crypto funding raises and group large rounds by sector and lead investors.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]\nComplete multi-chain scan across Ethereum, Solana, BNB Chain, Base, and Arbitrum. Include whale movements, top airdrop opportunities, token unlock risks, recent exploit risks, and VC funding patterns. Be specific with names, chains, amounts, and trading implications."
+  }
+]
