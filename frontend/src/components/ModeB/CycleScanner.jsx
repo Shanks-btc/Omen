@@ -159,7 +159,8 @@ export default function CycleScanner() {
     setLifecycle(null); setAgents([]); setAnalysis(null)
     setTrade(null); setEventCount(0); setCurrentAddress(address)
 
-    const es = new EventSource(`http://127.0.0.1:8000/api/mode-b/analyse?token_address=${address}&chain=${chain}`)
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000"
+const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${address}&chain=${chain}`)
     esRef.current = es
 
     es.addEventListener("chain_detected", e => { setChainInfo(JSON.parse(e.data)); setEventCount(p=>p+1) })

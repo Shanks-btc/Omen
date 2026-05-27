@@ -22,7 +22,8 @@ export default function ScanDashboard() {
     setBrief(null); setError(null)
     setStates(AGENTS.reduce((a,ag) => ({...a,[ag.id]:{status:"idle",msgs:[]}}),{}))
 
-    const es = new EventSource("http://127.0.0.1:8000/api/mode-a/scan")
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000"
+const es = new EventSource(`${API_URL}/api/mode-a/scan`)
 
     es.addEventListener("agent_start", e => {
       const d = JSON.parse(e.data)
