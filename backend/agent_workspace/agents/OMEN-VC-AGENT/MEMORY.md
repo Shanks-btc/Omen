@@ -31,3 +31,27 @@
 
 ---
 
+### OMEN-VC-AGENT — 2026-05-28T06:53:41.420576
+
+[{'type': 'function', 'function': {'name': 'get_recent_raises', 'description': 'Fetch recent crypto funding raises and group large rounds by sector and lead investors.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-VC-AGENT — 2026-05-28T06:53:53.519956
+
+[{'type': 'function', 'function': {'name': 'get_recent_raises', 'description': 'Fetch recent crypto funding raises and group large rounds by sector and lead investors.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-VC-AGENT — 2026-05-28T07:07:36.272428
+
+[{'type': 'function', 'function': {'name': 'get_recent_raises', 'description': 'Fetch recent crypto funding raises and group large rounds by sector and lead investors.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-VC-AGENT — 2026-05-28T07:07:51.467291
+
+[{'type': 'function', 'function': {'name': 'get_recent_raises', 'description': 'Fetch recent crypto funding raises and group large rounds by sector and lead investors.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+

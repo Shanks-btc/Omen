@@ -31,3 +31,27 @@
 
 ---
 
+### OMEN-AIRDROP-AGENT — 2026-05-28T06:53:41.357638
+
+[{'type': 'function', 'function': {'name': 'get_airdrop_opportunities', 'description': 'Find DeFi protocols with high TVL but no token yet as potential airdrop candidates.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-AIRDROP-AGENT — 2026-05-28T06:53:53.489745
+
+[{'type': 'function', 'function': {'name': 'get_airdrop_opportunities', 'description': 'Find DeFi protocols with high TVL but no token yet as potential airdrop candidates.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-AIRDROP-AGENT — 2026-05-28T07:07:36.226552
+
+[{'type': 'function', 'function': {'name': 'get_airdrop_opportunities', 'description': 'Find DeFi protocols with high TVL but no token yet as potential airdrop candidates.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-AIRDROP-AGENT — 2026-05-28T07:07:51.433986
+
+[{'type': 'function', 'function': {'name': 'get_airdrop_opportunities', 'description': 'Find DeFi protocols with high TVL but no token yet as potential airdrop candidates.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+

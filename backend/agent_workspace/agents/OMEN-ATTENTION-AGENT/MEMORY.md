@@ -31,3 +31,27 @@
 
 ---
 
+### OMEN-ATTENTION-AGENT — 2026-05-28T06:53:41.605010
+
+[{'type': 'function', 'function': {'name': 'get_token_overview', 'description': 'Get full Solana token overview including price, volume, liquidity, trades, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_erc20_token_summary', 'description': 'Get a formatted EVM ERC-20 token summary for price, transfers, liquidity, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}, 'chain': {'type': 'string', 'default': 'eth', 'description': 'chain'}}, 'required': ['addr']}}}]
+
+---
+
+### OMEN-ATTENTION-AGENT — 2026-05-28T06:53:53.569092
+
+[{'type': 'function', 'function': {'name': 'get_token_overview', 'description': 'Get full Solana token overview including price, volume, liquidity, trades, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_erc20_token_summary', 'description': 'Get a formatted EVM ERC-20 token summary for price, transfers, liquidity, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}, 'chain': {'type': 'string', 'default': 'eth', 'description': 'chain'}}, 'required': ['addr']}}}]
+
+---
+
+### OMEN-ATTENTION-AGENT — 2026-05-28T07:07:36.325316
+
+[{'type': 'function', 'function': {'name': 'get_token_overview', 'description': 'Get full Solana token overview including price, volume, liquidity, trades, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_erc20_token_summary', 'description': 'Get a formatted EVM ERC-20 token summary for price, transfers, liquidity, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}, 'chain': {'type': 'string', 'default': 'eth', 'description': 'chain'}}, 'required': ['addr']}}}]
+
+---
+
+### OMEN-ATTENTION-AGENT — 2026-05-28T07:07:51.636363
+
+[{'type': 'function', 'function': {'name': 'get_token_overview', 'description': 'Get full Solana token overview including price, volume, liquidity, trades, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_erc20_token_summary', 'description': 'Get a formatted EVM ERC-20 token summary for price, transfers, liquidity, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}, 'chain': {'type': 'string', 'default': 'eth', 'description': 'chain'}}, 'required': ['addr']}}}]
+
+---
+

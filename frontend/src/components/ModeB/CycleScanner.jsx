@@ -88,7 +88,7 @@ function IdleState() {
                 animation: "agpulse 1s infinite",
                 animationDelay: `${idx * 0.3}s`
               }} />
-              <div>
+              <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ fontSize: "14px", fontWeight: 700, color: ag.color, letterSpacing: "0.04em" }}>
                   {ag.name}
                 </div>
@@ -96,7 +96,7 @@ function IdleState() {
                   {ag.sub}
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "3px", alignItems: "flex-end", height: "22px", marginLeft: "auto" }}>
+              <div style={{ display: "flex", gap: "3px", alignItems: "flex-end", height: "22px", flexShrink: 0 }}>
                 {ag.delays.map((delay, i) => (
                   <div key={i} style={{
                     width: "4px", borderRadius: "3px", background: ag.color,
@@ -113,7 +113,7 @@ function IdleState() {
                 marginBottom: i < ag.msgs.length - 1 ? "6px" : 0
               }}>
                 <span style={{ color: ag.color, fontWeight: 700, flexShrink: 0 }}>→</span>
-                <span>{msg}</span>
+                <span style={{ wordBreak: "break-word" }}>{msg}</span>
               </div>
             ))}
           </div>
@@ -160,7 +160,7 @@ export default function CycleScanner() {
     setTrade(null); setEventCount(0); setCurrentAddress(address)
 
     const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000"
-const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${address}&chain=${chain}`)
+    const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${address}&chain=${chain}`)
     esRef.current = es
 
     es.addEventListener("chain_detected", e => { setChainInfo(JSON.parse(e.data)); setEventCount(p=>p+1) })
@@ -182,14 +182,12 @@ const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${addres
     ? Math.min(99, Math.round(60 + lifecycle.velocity_score * 20 + lifecycle.liquidity_score * 20))
     : null
 
-  const panel = {
-    background: "rgba(255,255,255,0.03)",
-    border: "1px solid rgba(255,255,255,0.08)",
-    borderRadius: "14px", padding: "0"
-  }
-
   return (
-    <div style={{ padding: "20px 0", display: "flex", flexDirection: "column", gap: "14px", fontFamily: F }}>
+    <div style={{
+      padding: "20px 0",
+      display: "flex", flexDirection: "column", gap: "14px",
+      fontFamily: F, width: "100%", overflowX: "hidden"
+    }}>
 
       <div style={{ textAlign: "center" }}>
         <div style={{ fontSize: "22px", fontWeight: 700, letterSpacing: "0.04em", color: "#fff" }}>
@@ -205,7 +203,8 @@ const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${addres
       {error && (
         <div style={{
           background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.3)",
-          borderRadius: "12px", padding: "14px 18px", fontSize: "14px", color: "#ef4444"
+          borderRadius: "12px", padding: "14px 18px", fontSize: "14px", color: "#ef4444",
+          wordBreak: "break-word"
         }}>⚠️ {error}</div>
       )}
 
@@ -217,7 +216,7 @@ const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${addres
           borderRadius: "12px", padding: "24px", textAlign: "center"
         }}>
           <div style={{ fontSize: "14px", color: "#06b6d4", fontWeight: 600 }}>
-            ⚡ FETCHING ON-CHAIN DATA...
+            FETCHING ON-CHAIN DATA...
           </div>
           {chainInfo && (
             <div style={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", marginTop: "8px" }}>
@@ -229,7 +228,7 @@ const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${addres
 
       {(chainInfo || token || lifecycle) && (
         <div style={{
-          display: "flex", alignItems: "center", gap: "16px",
+          display: "flex", alignItems: "center", gap: "12px",
           padding: "10px 16px",
           background: "rgba(255,255,255,0.02)",
           border: "1px solid rgba(255,255,255,0.06)",
@@ -268,14 +267,15 @@ const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${addres
           background: "rgba(255,255,255,0.03)",
           border: "1px solid rgba(255,255,255,0.08)",
           borderRadius: "14px", padding: "16px 20px",
-          display: "flex", alignItems: "center",
-          justifyContent: "space-between", flexWrap: "wrap", gap: "14px"
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))",
+          gap: "14px", alignItems: "center"
         }}>
           <div>
             <div style={{ fontSize: "22px", fontWeight: 700, color: "#fff" }}>{token.symbol}</div>
             <div style={{ fontSize: "13px", color: "rgba(255,255,255,0.35)", marginTop: "2px" }}>{token.name}</div>
           </div>
-          <div style={{ textAlign: "right" }}>
+          <div>
             <div style={{ fontSize: "16px", fontWeight: 700, color: "#06b6d4" }}>
               ${Number(token.price).toFixed(8)}
             </div>
@@ -283,19 +283,19 @@ const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${addres
               {Number(token.priceChange24h) >= 0 ? "+" : ""}{Number(token.priceChange24h).toFixed(2)}%
             </div>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div>
             <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.35)", fontWeight: 500 }}>LIQUIDITY</div>
             <div style={{ fontSize: "15px", fontWeight: 700, color: "#fff" }}>
               ${(Number(token.liquidity)/1000000).toFixed(2)}M
             </div>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div>
             <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.35)", fontWeight: 500 }}>HOLDERS</div>
             <div style={{ fontSize: "15px", fontWeight: 700, color: "#fff" }}>
               {Number(token.holders).toLocaleString()}
             </div>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div>
             <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.35)", fontWeight: 500 }}>24H VOL</div>
             <div style={{ fontSize: "15px", fontWeight: 700, color: "#fff" }}>
               ${(Number(token.volume24h)/1000).toFixed(0)}K
@@ -308,10 +308,8 @@ const es = new EventSource(`${API_URL}/api/mode-b/analyse?token_address=${addres
 
       {lifecycle && (
         <>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "12px" }}>
-            <div style={{ gridColumn: "span 2" }}>
-              <MembraneSurface stage={lifecycle.stage} velocityScore={lifecycle.velocity_score} stageColor={stageColor} txVelocityPct={lifecycle.tx_velocity_pct} />
-            </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "12px" }}>
+            <MembraneSurface stage={lifecycle.stage} velocityScore={lifecycle.velocity_score} stageColor={stageColor} txVelocityPct={lifecycle.tx_velocity_pct} />
             <ConfidenceGauge confidence={lifecycle.confidence} bias={lifecycle.stage_bias} stageColor={stageColor} />
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "12px" }}>

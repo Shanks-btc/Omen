@@ -31,3 +31,27 @@
 
 ---
 
+### OMEN-WHALE-AGENT — 2026-05-28T06:53:41.313119
+
+[{'type': 'function', 'function': {'name': 'get_solana_whale_movements', 'description': 'Scan Solana token markets for unusual high-volume whale movement signals.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'scan_all_evm_chains', 'description': 'Scan whale movements across Ethereum, BNB, Base, and Arbitrum chains.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-WHALE-AGENT — 2026-05-28T06:53:53.474316
+
+[{'type': 'function', 'function': {'name': 'get_solana_whale_movements', 'description': 'Scan Solana token markets for unusual high-volume whale movement signals.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'scan_all_evm_chains', 'description': 'Scan whale movements across Ethereum, BNB, Base, and Arbitrum chains.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-WHALE-AGENT — 2026-05-28T07:07:36.159466
+
+[{'type': 'function', 'function': {'name': 'get_solana_whale_movements', 'description': 'Scan Solana token markets for unusual high-volume whale movement signals.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'scan_all_evm_chains', 'description': 'Scan whale movements across Ethereum, BNB, Base, and Arbitrum chains.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-WHALE-AGENT — 2026-05-28T07:07:51.418369
+
+[{'type': 'function', 'function': {'name': 'get_solana_whale_movements', 'description': 'Scan Solana token markets for unusual high-volume whale movement signals.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'scan_all_evm_chains', 'description': 'Scan whale movements across Ethereum, BNB, Base, and Arbitrum chains.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+

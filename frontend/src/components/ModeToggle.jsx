@@ -9,8 +9,8 @@ export default function ModeToggle({ active, setActive }) {
       fontFamily: "'Inter', system-ui, sans-serif"
     }}>
       {[
-        { id: "B", icon: "🔬", label: "OMEN SCAN", sub: "Scan any token before you ape", color: "#06b6d4" },
-        { id: "A", icon: "📡", label: "MARKET BRIEF", sub: "Daily intelligence brief", color: "#a855f7" },
+        { id: "B", label: "🔬 OMEN SCAN", sub: "Scan any token before you ape", color: "#06b6d4" },
+        { id: "A", label: "📡 MARKET BRIEF", sub: "Daily intelligence brief", color: "#a855f7" },
       ].map(m => (
         <button
           key={m.id}
@@ -31,7 +31,7 @@ export default function ModeToggle({ active, setActive }) {
             transition: "all 0.2s"
           }}
         >
-          {m.icon} {m.label}
+          {m.label}
           <div style={{
             fontSize: "12px",
             fontWeight: 400,

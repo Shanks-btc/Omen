@@ -31,3 +31,27 @@
 
 ---
 
+### OMEN-LIFECYCLE-DETECTOR — 2026-05-28T06:53:41.537544
+
+[{'type': 'function', 'function': {'name': 'get_token_overview', 'description': 'Get full Solana token overview including price, volume, liquidity, trades, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_erc20_token_summary', 'description': 'Get a formatted EVM ERC-20 token summary for price, transfers, liquidity, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}, 'chain': {'type': 'string', 'default': 'eth', 'description': 'chain'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_token_security', 'description': 'Get Solana token security details including top holders, creator share, and metadata status.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_top_traders', 'description': 'Get top Solana token traders over the last 24 hours with PnL, volume, and side bias.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}]
+
+---
+
+### OMEN-LIFECYCLE-DETECTOR — 2026-05-28T06:53:53.550870
+
+[{'type': 'function', 'function': {'name': 'get_token_overview', 'description': 'Get full Solana token overview including price, volume, liquidity, trades, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_erc20_token_summary', 'description': 'Get a formatted EVM ERC-20 token summary for price, transfers, liquidity, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}, 'chain': {'type': 'string', 'default': 'eth', 'description': 'chain'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_token_security', 'description': 'Get Solana token security details including top holders, creator share, and metadata status.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_top_traders', 'description': 'Get top Solana token traders over the last 24 hours with PnL, volume, and side bias.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}]
+
+---
+
+### OMEN-LIFECYCLE-DETECTOR — 2026-05-28T07:07:36.305674
+
+[{'type': 'function', 'function': {'name': 'get_token_overview', 'description': 'Get full Solana token overview including price, volume, liquidity, trades, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_erc20_token_summary', 'description': 'Get a formatted EVM ERC-20 token summary for price, transfers, liquidity, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}, 'chain': {'type': 'string', 'default': 'eth', 'description': 'chain'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_token_security', 'description': 'Get Solana token security details including top holders, creator share, and metadata status.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_top_traders', 'description': 'Get top Solana token traders over the last 24 hours with PnL, volume, and side bias.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}]
+
+---
+
+### OMEN-LIFECYCLE-DETECTOR — 2026-05-28T07:07:51.607922
+
+[{'type': 'function', 'function': {'name': 'get_token_overview', 'description': 'Get full Solana token overview including price, volume, liquidity, trades, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_erc20_token_summary', 'description': 'Get a formatted EVM ERC-20 token summary for price, transfers, liquidity, and holders.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}, 'chain': {'type': 'string', 'default': 'eth', 'description': 'chain'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_token_security', 'description': 'Get Solana token security details including top holders, creator share, and metadata status.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}, {'type': 'function', 'function': {'name': 'get_top_traders', 'description': 'Get top Solana token traders over the last 24 hours with PnL, volume, and side bias.', 'parameters': {'type': 'object', 'properties': {'addr': {'type': 'string', 'description': 'addr'}}, 'required': ['addr']}}}]
+
+---
+

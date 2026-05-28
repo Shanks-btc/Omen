@@ -31,3 +31,27 @@
 
 ---
 
+### OMEN-RISK-AGENT — 2026-05-28T06:53:41.405915
+
+[{'type': 'function', 'function': {'name': 'get_token_unlocks', 'description': 'Find upcoming token unlock events with more than ten million dollars of potential supply.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'get_recent_hacks', 'description': 'Fetch recent DeFi hacks with protocol name, amount lost, and affected chain.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-RISK-AGENT — 2026-05-28T06:53:53.505940
+
+[{'type': 'function', 'function': {'name': 'get_token_unlocks', 'description': 'Find upcoming token unlock events with more than ten million dollars of potential supply.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'get_recent_hacks', 'description': 'Fetch recent DeFi hacks with protocol name, amount lost, and affected chain.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-RISK-AGENT — 2026-05-28T07:07:36.245048
+
+[{'type': 'function', 'function': {'name': 'get_token_unlocks', 'description': 'Find upcoming token unlock events with more than ten million dollars of potential supply.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'get_recent_hacks', 'description': 'Fetch recent DeFi hacks with protocol name, amount lost, and affected chain.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+
+### OMEN-RISK-AGENT — 2026-05-28T07:07:51.452029
+
+[{'type': 'function', 'function': {'name': 'get_token_unlocks', 'description': 'Find upcoming token unlock events with more than ten million dollars of potential supply.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}, {'type': 'function', 'function': {'name': 'get_recent_hacks', 'description': 'Fetch recent DeFi hacks with protocol name, amount lost, and affected chain.', 'parameters': {'type': 'object', 'properties': {}, 'required': []}}}]
+
+---
+

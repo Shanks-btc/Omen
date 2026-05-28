@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const CHAIN_OPTIONS = [
-  { value: "auto", label: "⚡ Auto" },
+  { value: "auto", label: "Auto" },
   { value: "solana", label: "◎ Solana" },
   { value: "bsc", label: "⬡ BSC" },
   { value: "eth", label: "Ξ ETH" },
@@ -45,7 +45,6 @@ export default function TokenInput({ onScan, scanning }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
 
-      {/* Chain buttons */}
       <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
         {CHAIN_OPTIONS.map(o => (
           <button key={o.value} onClick={() => setChain(o.value)} style={{
@@ -64,7 +63,6 @@ export default function TokenInput({ onScan, scanning }) {
         ))}
       </div>
 
-      {/* Address input */}
       <div style={{ display: "flex", gap: "10px" }}>
         <div style={{ flex: 1, position: "relative" }}>
           <input
@@ -117,7 +115,6 @@ export default function TokenInput({ onScan, scanning }) {
         </button>
       </div>
 
-      {/* Quick tokens */}
       <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
         <div style={{ display: "flex", gap: "8px", alignItems: "center", flexWrap: "wrap" }}>
           <span style={{ fontSize: "12px", color: "#F3BA2F", fontWeight: 700, minWidth: "32px" }}>BSC</span>
